@@ -133,7 +133,7 @@ buscador.addEventListener("keyup", function(ev){
                         </main>
                         <footer class="modal__footer">
                             <button class="btn btn-secondary">Close</button>
-                            <button class="btn btn-primary fav">Favoritos</button>
+                            <button class="btn btn-primary favorito">Favoritos</button>
                         </footer>
                         </div>`
                         
@@ -156,7 +156,7 @@ buscador.addEventListener("keyup", function(ev){
                         })
 
                         //evento para con el foton de "Favorito" añadir película a la sección favoritos
-                        let btnFav = document.querySelector(".fav")
+                        let btnFav = document.querySelector(".favorito")
                         btnFav.addEventListener("click", function(){
                             if(favoritos.length == 0){
                                 favoritos.push(pelicula)
